@@ -11,7 +11,8 @@ public class Main {
 		BufferedReader br = null;
 		String paciente, name = null, symptom = null, priority = null;
 		String[] pacientes;
-		VectorHeap<Paciente> registroAtencion = new VectorHeap<Paciente>();
+		PriorityQueue<Paciente> registroAtencion = (PriorityQueue<Paciente>) new PriorityQueueJCF<Paciente>();
+		//PriorityQueue<Paciente> registroAtencion = new VectorHeap<Paciente>();
     
 //---------------------------Read the file, that contains the dictionary
 			try {
